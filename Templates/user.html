@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/user.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../asset/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="../asset/classroom.png">
+    <title>Kelasroom</title>
+</head>
+<body>
+    <div class="topbar">
+        <div> 
+            <button onclick="side_open()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+            <div><img src="../asset/google.png" alt="" width="69px" height="28px"></div> 
+            <div> <b>Kelasroom</b> </div> 
+        </div>
+        <div>
+        </div>
+    </div>
+    <div class="welcome">WELCOME TO GOOGLE KELASROOM OPEN THE SIDE BAR TO START</div>
+    <div class="sidebar" style="display: none" id="mysidebar">
+        <button onclick="side_close()"><b>Close (X)</b></button>
+        <div onclick="home()"><b>Home</b></div><br>
+        <div onclick="myProfile()"><b>My Profile</b></div><br>
+        <div onclick="logout()"><b>Logout</b></div>
+    </div>
+    <div class="content">
+        <div><h1 class="head"></h1></div>
+        <div class="class"></div>
+    </div>
+
+    <script>
+        function side_open() {
+            document.getElementById("mysidebar").style.display = "block";
+        }
+        
+        function side_close() {
+            document.getElementById("mysidebar").style.display = "none";
+        }
+    </script>
+    <script
+    src="http://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="../js/user.js"></script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+body{
+    /* background-image: radial-gradient(circle, #b2bc6f, #a4cd7e, #8edf95, #6defb4, #28ffda); */
+    background-color: #AACCE2;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    font-size: 15px;
+  }
+/* top bar */
+.topbar {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 4px solid #80808061;
+    background-color: white;
+  }
+/* Menu Button google kelasroom */
+.topbar > div:first-child{
+    margin-left: 20px;
+    width: 300px;
+    color: black;
+    display: flex;
+  }  
+.topbar div:first-child button:first-child > div{ 
+    width: 18px;
+    height: 3px;
+    background-color: #9C9C9C;
+    margin: 3px;
+    border-radius: 5px;
+    margin-left: 9px;
+  }
+.topbar div:first-child button:first-child:hover{
+    background-color:#9c9c9c2e;
+  }
+.topbar div:first-child button:first-child{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 50px;
+    width: 36px;
+    height: 36px;
+    border: none;
+  }
+.topbar div:first-child div:nth-child(2){
+    margin-left: 15px;
+    margin-top: 20px;
+  }
+.topbar div:first-child div:nth-child(3){
+    margin-left: 3px;
+    line-height: 65px;
+    font-size: 20px;
+  }
+/* ---------------------------------------------- */
+/* Menu di Kanan */
+.topbar > div:nth-child(2){
+    margin-top: 25px;
+    height: 100%;
+    width: 255px;
+    border-radius: 10px;
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 22px;
+  }
+.topbar div:nth-child(2) i{
+    color: #888888;
+  }
+.topbar div:nth-child(2) i:hover{
+    color: black;
+  }
+/* ----------------------------------------------- */
+.sidebar {
+    background-color: #aacce2;
+    padding: 10px;
+    height: 100vh;
+    width: 250px;
+    margin-left: -128px;
+    position: fixed;
+    top: 0;
+    box-shadow: 2px 2px 2px 2px #888888;
+  }
+.sidebar div{
+    background-color: #ffffff;
+    padding: 14px 14px;
+    color: black;
+    width: 206px;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: -7px;
+    transition: all 750ms;
+  }
+.sidebar div:hover{
+    background-color: #9c9c9c;
+  }
+.sidebar button{
+    background-color: Transparent;
+    border: none;
+    width: 76px;
+    margin-left: 185px;
+    color: #9C9C9C;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+.sidebar button:hover {
+    text-decoration: underline;
+    color: white;
+  }
+/* ----------------------------------------------  */
+.content {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.content > div{
+    background-color: white;
+    margin: 10px;
+    height: 250px;
+    width: 275px;
+    border-radius: 10px;
+    border: 1px solid #9c9c9c;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 2px 2px 2px 2px #9c9c9c;
+  }
+.content div div:first-child{
+    background-image: url(../asset/kayaking.jpg);
+    background-size: 120%;
+    /* border-radius: 10px; */
+    height: 119px;
+    width: 275px;
+    display: flex;
+    justify-content: left;
+    box-shadow: 2px 8px 2px 2px #9c9c9c;
+  }
+.content div div:first-child a{
+    margin-left: 13px;
+    margin-top: 13px;
+    /* margin-right: 25px; */
+    /* line-height: 70px; */
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+  }
+.content div div:first-child img{
+    margin-top: 50px;
+    margin-bottom: -50px;
+    margin-left: -24px;
+    margin-right: -21px;
+    border: 1px solid #9fa8ad;
+    border-radius: 50px;
+}
+
+
+.content div div:nth-child(2){
+    height: 40px;
+    margin-top: 16px;
+    /* padding: 30px; */
+    width: 275px;
+    border-bottom: 4px solid #80808021;
+    border-top: 4px solid #80808021;
+    text-align: center;
+    line-height: 35px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    color: lightgrey;
+  }
+.content div div:nth-child(3){
+    height: 60px;
+    width: 275px;
+    text-align: right;
+    line-height: 58px;
+    margin-right: 18px;
+    font-size: 25px;
+  }
+  

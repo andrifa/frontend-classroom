@@ -1,0 +1,169 @@
+body{
+    /* background-image: radial-gradient(circle, #b2bc6f, #a4cd7e, #8edf95, #6defb4, #28ffda); */
+    background-color: #AACCE2;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    font-size: 15px;
+  }
+/* top bar */
+.topbar {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 4px solid #80808061;
+    background-color: white;
+  }
+/* Menu Button google kelasroom */
+.topbar > div:first-child{
+    margin-left: 20px;
+    width: 300px;
+    color: black;
+    display: flex;
+  }  
+.topbar div:first-child button:first-child > div{ 
+    width: 18px;
+    height: 3px;
+    background-color: #9C9C9C;
+    margin: 3px;
+    border-radius: 5px;
+    margin-left: 9px;
+  }
+.topbar div:first-child button:first-child:hover{
+    background-color:#9c9c9c2e;
+  }
+.topbar div:first-child button:first-child{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 50px;
+    width: 36px;
+    height: 36px;
+    border: none;
+  }
+.topbar div:first-child div:nth-child(2){
+    margin-left: 15px;
+    margin-top: 20px;
+  }
+.topbar div:first-child div:nth-child(3){
+    margin-left: 3px;
+    line-height: 65px;
+    font-size: 20px;
+  }
+/* ---------------------------------------------- */
+/* Menu di Kanan */
+.topbar > div:nth-child(2){
+    margin-top: 25px;
+    margin-left: 25px;
+    height: 100%;
+    width: 450px;
+    border-radius: 10px;
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 22px;
+  }
+.topbar div:nth-child(2) i{
+    color: #888888;
+  }
+.topbar div:nth-child(2) i:hover{
+    color: black;
+  }
+/* ----------------------------------------------- */
+.welcome{
+  font-size: 50px;
+  text-align: center;
+  margin: 70px;
+}
+/* ----------------------------------------------- */
+.sidebar {
+    background-color: #aacce2;
+    padding: 10px;
+    height: 100vh;
+    width: 250px;
+    margin-left: -128px;
+    position: fixed;
+    top: 0;
+    box-shadow: 2px 2px 2px 2px #888888;
+  }
+.sidebar div{
+    background-color: #ffffff;
+    padding: 14px 14px;
+    color: black;
+    width: 206px;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: -7px;
+    transition: all 750ms;
+  }
+.sidebar div:hover{
+    background-color: #9c9c9c;
+  }
+.sidebar button{
+    background-color: Transparent;
+    border: none;
+    width: 76px;
+    margin-left: 185px;
+    color: #9C9C9C;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+.sidebar button:hover {
+    text-decoration: underline;
+    color: white;
+  }
+/* ----------------------------------------------  */
+.content {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+.content > div:first-child{
+    background-image: url(../asset/kayaking.jpg);
+    background-size: 100%;
+    width: 900px;
+    height: 168px;
+    border-radius: 22px;
+    font-size: 18px;
+    margin: 10px;
+  }
+.content div:first-child h1{
+    margin: 20px;
+  }
+.content div:nth-child(2){
+    height: 100%;
+    border: 2px solid #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #686868;
+    color: white;
+  }
+.answer{
+    width: 99%;
+    height: 88px;
+  }
+.content > div{
+    width: 866px;
+    height: 100%;
+    border: 2px solid #80808075;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: white;
+  }
+.answerDesain{
+    height: 100%;
+    border: 2px solid #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #686868;
+    color: white;
+  }
+
