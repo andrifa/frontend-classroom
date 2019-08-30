@@ -56,7 +56,7 @@ body{
 .topbar > div:nth-child(2){
     margin-top: 25px;
     height: 100%;
-    width: 255px;
+    width: 190px;
     border-radius: 10px;
     color: black;
     display: flex;
@@ -74,17 +74,17 @@ body{
     background-color: #aacce2;
     padding: 10px;
     height: 100vh;
-    width: 250px;
+    width: 0px;
     margin-left: -128px;
     position: fixed;
     top: 0;
     box-shadow: 2px 2px 2px 2px #888888;
+    transition: .5s;
   }
 .sidebar div{
     background-color: #ffffff;
     padding: 14px 14px;
     color: black;
-    width: 206px;
     display: flex;
     justify-content: flex-end;
     border-radius: 30px;
@@ -96,24 +96,12 @@ body{
 .sidebar div:hover{
     background-color: #9c9c9c;
   }
-.sidebar button{
-    background-color: Transparent;
-    border: none;
-    width: 76px;
-    margin-left: 185px;
-    color: #9C9C9C;
-    font-size: 15px;
-    margin-bottom: 10px;
-  }
-.sidebar button:hover {
-    text-decoration: underline;
-    color: white;
-  }
 /* ----------------------------------------------  */
 .content {
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
+    height: 100vh;
   }
 
 .content > div{
@@ -177,4 +165,10 @@ body{
     margin-right: 18px;
     font-size: 25px;
   }
+
+@media only screen and (max-width: 700px) {
+  .content {
+    justify-content: center
+  }
+}
   

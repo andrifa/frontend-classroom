@@ -24,24 +24,23 @@
         </div>
         <div>
             <!-- <i class="fa fa-times" aria-hidden="true"></i> -->
-            <i onclick="createclass()" class="fa fa-plus" aria-hidden="true"> Create Class</i>
+            <i onclick="createclass()" class="fa fa-plus" aria-hidden="true" title="Create Class"></i>
             <!-- <i class="fa fa-user-circle-o" aria-hidden="true"></i> -->
         </div>
     </div>
-    <div class="sidebar" style="display: none" id="mysidebar">
-        <button onclick="side_close()"><b>Close (X)</b></button>
+    <div class="sidebar" id="mysidebar">
         <div onclick="home()"><b>Home</b></div><br>
         <div onclick="myProfile()"><b>My Profile</b></div><br>
         <div onclick="logout()"><b>Logout</b></div>
     </div>
-    <div class="content"></div>
+    <div class="content" onclick="side_close()"></div>
     <script>
         function side_open() {
-            document.getElementById("mysidebar").style.display = "block";
+            document.getElementById("mysidebar").style.width = "250px";
         }
         
         function side_close() {
-            document.getElementById("mysidebar").style.display = "none";
+            document.getElementById("mysidebar").style.width = "0px";
         }
     </script>
     <script

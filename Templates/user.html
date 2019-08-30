@@ -24,25 +24,23 @@
         <div>
         </div>
     </div>
-    <div class="welcome">WELCOME TO GOOGLE KELASROOM OPEN THE SIDE BAR TO START</div>
-    <div class="sidebar" style="display: none" id="mysidebar">
-        <button onclick="side_close()"><b>Close (X)</b></button>
+    <div class="sidebar" id="mysidebar">
         <div onclick="home()"><b>Home</b></div><br>
         <div onclick="myProfile()"><b>My Profile</b></div><br>
         <div onclick="logout()"><b>Logout</b></div>
     </div>
-    <div class="content">
+    <div class="content" onclick="side_close()">
         <div><h1 class="head"></h1></div>
         <div class="class"></div>
     </div>
 
     <script>
         function side_open() {
-            document.getElementById("mysidebar").style.display = "block";
+            document.getElementById("mysidebar").style.width = "250px";
         }
         
         function side_close() {
-            document.getElementById("mysidebar").style.display = "none";
+            document.getElementById("mysidebar").style.width = "0px";
         }
     </script>
     <script

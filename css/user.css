@@ -52,23 +52,7 @@ body{
     font-size: 20px;
   }
 /* ---------------------------------------------- */
-/* Menu di Kanan */
-.topbar > div:nth-child(2){
-    margin-top: 17px;
-    height: 100%;
-    width: 255px;
-    border-radius: 10px;
-    color: black;
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 25px;
-  }
-.topbar div:nth-child(2) a{
-    color: #888888;
-  }
-.topbar div:nth-child(2) a:hover{
-    color: black;
-  }
+
 /* ----------------------------------------------- */
 .welcome{
     font-size: 50px;
@@ -80,17 +64,17 @@ body{
     background-color: #aacce2;
     padding: 10px;
     height: 100vh;
-    width: 250px;
+    width: 0px;
     margin-left: -128px;
     position: fixed;
     top: 0;
     box-shadow: 2px 2px 2px 2px #888888;
+    transition: .5s;
   }
 .sidebar div{
     background-color: #ffffff;
     padding: 14px 14px;
     color: black;
-    width: 206px;
     display: flex;
     justify-content: flex-end;
     border-radius: 30px;
@@ -102,19 +86,7 @@ body{
 .sidebar div:hover{
     background-color: #9c9c9c;
   }
-.sidebar button{
-    background-color: Transparent;
-    border: none;
-    width: 76px;
-    margin-left: 185px;
-    color: #9C9C9C;
-    font-size: 15px;
-    margin-bottom: 10px;
-  }
-.sidebar button:hover {
-    text-decoration: underline;
-    color: white;
-  }
+
 /* ----------------------------------------------  */
 .content {
     padding: 10px;
@@ -191,7 +163,7 @@ body{
 .classwork > div{
     width: 100%;
     height: 100%;
-    border: 2px solid #80808075;
+    /* border: 2px solid #80808075; */
     padding: 5px;
     border-radius: 10px;
     margin: 1px;
@@ -199,7 +171,94 @@ body{
   }
 .answer{
     width: 99%;
-    height: 88px;
+    height: 120px;
   }
 
+@media only screen and (max-width: 650px) {
+    .content {
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .content > div:first-child {
+      background-image: url(../asset/kayaking.jpg);
+      background-size: 100%;
+      width: 900px;
+      height: 168px;
+      border-radius: 22px;
+      font-size: 18px;
+      margin: 10px;
+      line-height: 125px;
+      text-align: center;
+    }
+    .content div:first-child h1 {
+      margin: 20px;
+    }
+    .class {
+      width: 866px;
+      height: 100%;
+      /* border: 2px solid #ffffff; */
+      padding: 15px;
+      /* border-radius: 10px; */
+      /* margin: 10px; */
+      /* background-color: #686868; */
+      /* color: white; */
+      /* text-align: right; */
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .kotak {
+      width: 100px;
+      height: 100px;
+      margin: 5px;
+      text-align: center;
+      background-color: #686868;
+      border-radius: 10px;
+      border: 2px solid white;
+      color: white;
+    }
+    .kotak a {
+      text-decoration: none;
+      color: white;
+      /* border: 1px solid white; */
+      /* padding: 20px 0px; */
+      width: 100px;
+      height: 90px;
+      margin-top: 10px;
+      /* border: 1px solid; */
+      display: inline-block;
+      /* border-radius: 10px; */
+    }
+    .classwork {
+      width: 858px;
+      border: 2px solid #80808075;
+      padding: 15px;
+      border-radius: 10px;
+      margin: 10px;
+      background-color: white;
+      display: inline-block;
+    }
+    .classwork > div {
+      width: unset;
+      border: unset;
+      padding: unset;
+      height: unset;
+      border-radius: unset;
+      margin-bottom: unset;
+      background-color: unset;
+      margin-left: unset;
+      height: unset;
+    }
+    .answer {
+      width: 99%;
+      height: 88px;
+    }
+  }
+@media only screen and (max-width: 458px) {
+    .content > div:first-child{
+      line-height: unset;
+    }
+  }
 
